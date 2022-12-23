@@ -1,0 +1,15 @@
+D:\Project\azerimed\src\projects\generalIntegration\GeneralIntegration.Domain\bin\Debug\net6.0\GeneralIntegration.Domain.deps.json
+D:\Project\azerimed\src\projects\generalIntegration\GeneralIntegration.Domain\bin\Debug\net6.0\GeneralIntegration.Domain.dll
+D:\Project\azerimed\src\projects\generalIntegration\GeneralIntegration.Domain\bin\Debug\net6.0\GeneralIntegration.Domain.pdb
+D:\Project\azerimed\src\projects\generalIntegration\GeneralIntegration.Domain\bin\Debug\net6.0\Core.Domain.dll
+D:\Project\azerimed\src\projects\generalIntegration\GeneralIntegration.Domain\bin\Debug\net6.0\Core.Domain.pdb
+D:\Project\azerimed\src\projects\generalIntegration\GeneralIntegration.Domain\obj\Debug\net6.0\GeneralIntegration.Domain.csproj.AssemblyReference.cache
+D:\Project\azerimed\src\projects\generalIntegration\GeneralIntegration.Domain\obj\Debug\net6.0\GeneralIntegration.Domain.GeneratedMSBuildEditorConfig.editorconfig
+D:\Project\azerimed\src\projects\generalIntegration\GeneralIntegration.Domain\obj\Debug\net6.0\GeneralIntegration.Domain.AssemblyInfoInputs.cache
+D:\Project\azerimed\src\projects\generalIntegration\GeneralIntegration.Domain\obj\Debug\net6.0\GeneralIntegration.Domain.AssemblyInfo.cs
+D:\Project\azerimed\src\projects\generalIntegration\GeneralIntegration.Domain\obj\Debug\net6.0\GeneralIntegration.Domain.csproj.CoreCompileInputs.cache
+D:\Project\azerimed\src\projects\generalIntegration\GeneralIntegration.Domain\obj\Debug\net6.0\GeneralIntegration.Domain.csproj.CopyComplete
+D:\Project\azerimed\src\projects\generalIntegration\GeneralIntegration.Domain\obj\Debug\net6.0\GeneralIntegration.Domain.dll
+D:\Project\azerimed\src\projects\generalIntegration\GeneralIntegration.Domain\obj\Debug\net6.0\refint\GeneralIntegration.Domain.dll
+D:\Project\azerimed\src\projects\generalIntegration\GeneralIntegration.Domain\obj\Debug\net6.0\GeneralIntegration.Domain.pdb
+D:\Project\azerimed\src\projects\generalIntegration\GeneralIntegration.Domain\obj\Debug\net6.0\ref\GeneralIntegration.Domain.dll
