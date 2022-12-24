@@ -12,6 +12,7 @@
 
   <ItemGroup>
     <Folder Include="BestControl\" />
+    <Folder Include="GeneralIntegration\" />
     <Folder Include="PrintApp\" />
   </ItemGroup>
 

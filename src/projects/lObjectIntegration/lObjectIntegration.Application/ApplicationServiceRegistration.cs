@@ -1,4 +1,6 @@
 ﻿using AutoMapper;
+using lObjectIntegration.Application.GeneralIntegration;
+using lObjectIntegration.Infrastructure.GeneralIntegration;
 using MediatR;
 using Microsoft.Extensions.DependencyInjection;
 using System;
@@ -12,12 +14,12 @@ namespace lObjectIntegration.Application
 {
     public static class ApplicationServiceRegistration
     {
-        public static IServiceCollection AddApplicationServices(this IServiceCollection services)
+        public static IServiceCollection AddApplicationServicesCollection(this IServiceCollection services)
         {
 
             services.AddAutoMapper(Assembly.GetExecutingAssembly());
             services.AddMediatR(Assembly.GetExecutingAssembly());
-
+            services.AddScoped<TestApp>();
             //services.AddScoped<BrandBusinessRules>();
             // services.AddScoped<AuthBusinessRules>();
 

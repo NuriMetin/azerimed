@@ -24,11 +24,11 @@
 
   <ItemGroup>
     <Folder Include="BestControl\" />
-    <Folder Include="GeneralIntegration\" />
     <Folder Include="PrintApp\" />
   </ItemGroup>
 
   <ItemGroup>
+    <ProjectReference Include="..\..\generalIntegration\GeneralIntegration.Domain\GeneralIntegration.Domain.csproj" />
     <ProjectReference Include="..\lObjectIntegration.Domain\lObjectIntegration.Domain.csproj" />
   </ItemGroup>
 

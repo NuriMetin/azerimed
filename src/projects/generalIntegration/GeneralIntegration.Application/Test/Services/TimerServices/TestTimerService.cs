@@ -15,7 +15,7 @@ namespace GeneralIntegration.Application.Test.Services.TimerServices
         public TestTimerService(ITestBackgroundService service)
         {
             ForGuid.GUID_TIMER_SERVICE = Guid.NewGuid().ToString();
-            InvokeTimer(service.LockService, TimeSpan.FromSeconds(3)).GetAwaiter().GetResult();
+            InvokeTimer(service.InvokeServiceAsync, TimeSpan.FromSeconds(3)).GetAwaiter().GetResult();
         }
     }
 }

@@ -14,9 +14,12 @@
   </ItemGroup>
 
   <ItemGroup>
-    <Folder Include="GeneralIntegration\" />
     <Folder Include="BestControl\" />
     <Folder Include="PrintApp\" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\lObjectIntegration.Infrastructure\lObjectIntegration.Infrastructure.csproj" />
   </ItemGroup>
 
 </Project>

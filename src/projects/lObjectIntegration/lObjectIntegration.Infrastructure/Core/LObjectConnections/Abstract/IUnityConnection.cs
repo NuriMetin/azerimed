@@ -1,4 +1,4 @@
-﻿using lObjectIntegration.Domain.GeneralIntegration.Enums;
+﻿using lObjectIntegration.Domain.Core.Enums;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -10,7 +10,7 @@ namespace lObjectIntegration.Infrastructure.Core.LObjectConnections.Abstract
 {
     public interface IUnityConnection
     {
-        UnityApplication Connect(string userName, string password, Enums.Period period);
-        void Disconnect(ref UnityApplication unityApplication);
+        UnityApplication Login();
+        void Logout();
     }
 }

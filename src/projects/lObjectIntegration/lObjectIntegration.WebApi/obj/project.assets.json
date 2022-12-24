@@ -36,6 +36,62 @@
           }
         }
       },
+      "FluentValidation/11.3.0": {
+        "type": "package",
+        "compile": {
+          "lib/net6.0/FluentValidation.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/net6.0/FluentValidation.dll": {
+            "related": ".xml"
+          }
+        }
+      },
+      "FluentValidation.DependencyInjectionExtensions/11.3.0": {
+        "type": "package",
+        "dependencies": {
+          "FluentValidation": "11.3.0",
+          "Microsoft.Extensions.Dependencyinjection.Abstractions": "2.1.0"
+        },
+        "compile": {
+          "lib/netstandard2.1/FluentValidation.DependencyInjectionExtensions.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/netstandard2.1/FluentValidation.DependencyInjectionExtensions.dll": {
+            "related": ".xml"
+          }
+        }
+      },
+      "MediatR/9.0.0": {
+        "type": "package",
+        "compile": {
+          "lib/netstandard2.1/MediatR.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/netstandard2.1/MediatR.dll": {
+            "related": ".xml"
+          }
+        }
+      },
+      "MediatR.Extensions.Microsoft.DependencyInjection/9.0.0": {
+        "type": "package",
+        "dependencies": {
+          "MediatR": "9.0.0",
+          "Microsoft.Extensions.DependencyInjection.Abstractions": "2.0.0"
+        },
+        "compile": {
+          "lib/netstandard2.0/MediatR.Extensions.Microsoft.DependencyInjection.dll": {}
+        },
+        "runtime": {
+          "lib/netstandard2.0/MediatR.Extensions.Microsoft.DependencyInjection.dll": {}
+        }
+      },
       "Microsoft.CSharp/4.5.0": {
         "type": "package",
         "compile": {
@@ -56,7 +112,7 @@
           "buildMultiTargeting/Microsoft.Extensions.ApiDescription.Server.targets": {}
         }
       },
-      "Microsoft.Extensions.DependencyInjection.Abstractions/2.0.0": {
+      "Microsoft.Extensions.DependencyInjection.Abstractions/2.2.0": {
         "type": "package",
         "compile": {
           "lib/netstandard2.0/Microsoft.Extensions.DependencyInjection.Abstractions.dll": {
@@ -277,6 +333,78 @@
             "related": ".xml"
           }
         }
+      },
+      "Core.Domain/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v6.0",
+        "dependencies": {
+          "AutoMapper.Extensions.Microsoft.DependencyInjection": "6.0.0"
+        },
+        "compile": {
+          "bin/placeholder/Core.Domain.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/Core.Domain.dll": {}
+        }
+      },
+      "GeneralIntegration.Domain/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v6.0",
+        "dependencies": {
+          "AutoMapper.Extensions.Microsoft.DependencyInjection": "6.0.0",
+          "Core.Domain": "1.0.0"
+        },
+        "compile": {
+          "bin/placeholder/GeneralIntegration.Domain.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/GeneralIntegration.Domain.dll": {}
+        }
+      },
+      "lObjectIntegration.Application/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v6.0",
+        "dependencies": {
+          "AutoMapper.Extensions.Microsoft.DependencyInjection": "6.0.0",
+          "FluentValidation.DependencyInjectionExtensions": "11.3.0",
+          "MediatR.Extensions.Microsoft.DependencyInjection": "9.0.0",
+          "Microsoft.Extensions.DependencyInjection.Abstractions": "2.2.0",
+          "lObjectIntegration.Infrastructure": "1.0.0"
+        },
+        "compile": {
+          "bin/placeholder/lObjectIntegration.Application.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/lObjectIntegration.Application.dll": {}
+        }
+      },
+      "lObjectIntegration.Domain/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v6.0",
+        "dependencies": {
+          "AutoMapper.Extensions.Microsoft.DependencyInjection": "6.0.0"
+        },
+        "compile": {
+          "bin/placeholder/lObjectIntegration.Domain.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/lObjectIntegration.Domain.dll": {}
+        }
+      },
+      "lObjectIntegration.Infrastructure/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v6.0",
+        "dependencies": {
+          "AutoMapper.Extensions.Microsoft.DependencyInjection": "6.0.0",
+          "GeneralIntegration.Domain": "1.0.0",
+          "lObjectIntegration.Domain": "1.0.0"
+        },
+        "compile": {
+          "bin/placeholder/lObjectIntegration.Infrastructure.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/lObjectIntegration.Infrastructure.dll": {}
+        }
       }
     }
   },
@@ -309,6 +437,77 @@
         "automapper.extensions.microsoft.dependencyinjection.nuspec",
         "lib/netstandard2.0/AutoMapper.Extensions.Microsoft.DependencyInjection.dll",
         "lib/netstandard2.0/AutoMapper.Extensions.Microsoft.DependencyInjection.pdb"
+      ]
+    },
+    "FluentValidation/11.3.0": {
+      "sha512": "AlsfUkdIzSMA2v091K0gT1YjEwc7YR5pIA5yq7PnZivhoH3YETMhZbUySzsLbJKhj/E3ei6nEgtqdm00AVHXeg==",
+      "type": "package",
+      "path": "fluentvalidation/11.3.0",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "README.md",
+        "fluent-validation-icon.png",
+        "fluentvalidation.11.3.0.nupkg.sha512",
+        "fluentvalidation.nuspec",
+        "lib/net5.0/FluentValidation.dll",
+        "lib/net5.0/FluentValidation.xml",
+        "lib/net6.0/FluentValidation.dll",
+        "lib/net6.0/FluentValidation.xml",
+        "lib/net7.0/FluentValidation.dll",
+        "lib/net7.0/FluentValidation.xml",
+        "lib/netstandard2.0/FluentValidation.dll",
+        "lib/netstandard2.0/FluentValidation.xml",
+        "lib/netstandard2.1/FluentValidation.dll",
+        "lib/netstandard2.1/FluentValidation.xml"
+      ]
+    },
+    "FluentValidation.DependencyInjectionExtensions/11.3.0": {
+      "sha512": "C7gtDO79JVRtZob4K4VvabpXEEcvxH6Bh3MzS/TAjoGlOu1/m93+NrAwzjWxUmPFMq+lk7/at+zu2uM8rB1tXg==",
+      "type": "package",
+      "path": "fluentvalidation.dependencyinjectionextensions/11.3.0",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "README.md",
+        "fluent-validation-icon.png",
+        "fluentvalidation.dependencyinjectionextensions.11.3.0.nupkg.sha512",
+        "fluentvalidation.dependencyinjectionextensions.nuspec",
+        "lib/netstandard2.0/FluentValidation.DependencyInjectionExtensions.dll",
+        "lib/netstandard2.0/FluentValidation.DependencyInjectionExtensions.xml",
+        "lib/netstandard2.1/FluentValidation.DependencyInjectionExtensions.dll",
+        "lib/netstandard2.1/FluentValidation.DependencyInjectionExtensions.xml"
+      ]
+    },
+    "MediatR/9.0.0": {
+      "sha512": "8b3UYNxegHVYcJMG2zH8wn+YqxLvXG+eMfj0cMCq/jTW72p6O3PCKMkrIv0mqyxdW7bA4gblsocw7n+/9Akg5g==",
+      "type": "package",
+      "path": "mediatr/9.0.0",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "gradient_128x128.png",
+        "lib/net461/MediatR.dll",
+        "lib/net461/MediatR.xml",
+        "lib/netstandard2.0/MediatR.dll",
+        "lib/netstandard2.0/MediatR.xml",
+        "lib/netstandard2.1/MediatR.dll",
+        "lib/netstandard2.1/MediatR.xml",
+        "mediatr.9.0.0.nupkg.sha512",
+        "mediatr.nuspec"
+      ]
+    },
+    "MediatR.Extensions.Microsoft.DependencyInjection/9.0.0": {
+      "sha512": "msreY4ogiPdIRWiCQVHQDytIQpsZCLWsixWPZ+Xs86KZrvtuiV8BDHbIT0kBmogynVYWNpspb3caw+86YU8L6w==",
+      "type": "package",
+      "path": "mediatr.extensions.microsoft.dependencyinjection/9.0.0",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "gradient_128x128.png",
+        "lib/netstandard2.0/MediatR.Extensions.Microsoft.DependencyInjection.dll",
+        "mediatr.extensions.microsoft.dependencyinjection.9.0.0.nupkg.sha512",
+        "mediatr.extensions.microsoft.dependencyinjection.nuspec"
       ]
     },
     "Microsoft.CSharp/4.5.0": {
@@ -406,16 +605,16 @@
         "tools/netcoreapp2.1/GetDocument.Insider.runtimeconfig.json"
       ]
     },
-    "Microsoft.Extensions.DependencyInjection.Abstractions/2.0.0": {
-      "sha512": "eUdJ0Q/GfVyUJc0Jal5L1QZLceL78pvEM9wEKcHeI24KorqMDoVX+gWsMGLulQMfOwsUaPtkpQM2pFERTzSfSg==",
+    "Microsoft.Extensions.DependencyInjection.Abstractions/2.2.0": {
+      "sha512": "f9hstgjVmr6rmrfGSpfsVOl2irKAgr1QjrSi3FgnS7kulxband50f2brRLwySAQTADPZeTdow0mpSMcoAdadCw==",
       "type": "package",
-      "path": "microsoft.extensions.dependencyinjection.abstractions/2.0.0",
+      "path": "microsoft.extensions.dependencyinjection.abstractions/2.2.0",
       "files": [
         ".nupkg.metadata",
         ".signature.p7s",
         "lib/netstandard2.0/Microsoft.Extensions.DependencyInjection.Abstractions.dll",
         "lib/netstandard2.0/Microsoft.Extensions.DependencyInjection.Abstractions.xml",
-        "microsoft.extensions.dependencyinjection.abstractions.2.0.0.nupkg.sha512",
+        "microsoft.extensions.dependencyinjection.abstractions.2.2.0.nupkg.sha512",
         "microsoft.extensions.dependencyinjection.abstractions.nuspec"
       ]
     },
@@ -1074,12 +1273,40 @@
         "system.threading.tasks.4.3.0.nupkg.sha512",
         "system.threading.tasks.nuspec"
       ]
+    },
+    "Core.Domain/1.0.0": {
+      "type": "project",
+      "path": "../../../corePackages/Core.Domain/Core.Domain.csproj",
+      "msbuildProject": "../../../corePackages/Core.Domain/Core.Domain.csproj"
+    },
+    "GeneralIntegration.Domain/1.0.0": {
+      "type": "project",
+      "path": "../../generalIntegration/GeneralIntegration.Domain/GeneralIntegration.Domain.csproj",
+      "msbuildProject": "../../generalIntegration/GeneralIntegration.Domain/GeneralIntegration.Domain.csproj"
+    },
+    "lObjectIntegration.Application/1.0.0": {
+      "type": "project",
+      "path": "../lObjectIntegration.Application/lObjectIntegration.Application.csproj",
+      "msbuildProject": "../lObjectIntegration.Application/lObjectIntegration.Application.csproj"
+    },
+    "lObjectIntegration.Domain/1.0.0": {
+      "type": "project",
+      "path": "../lObjectIntegration.Domain/lObjectIntegration.Domain.csproj",
+      "msbuildProject": "../lObjectIntegration.Domain/lObjectIntegration.Domain.csproj"
+    },
+    "lObjectIntegration.Infrastructure/1.0.0": {
+      "type": "project",
+      "path": "../lObjectIntegration.Infrastructure/lObjectIntegration.Infrastructure.csproj",
+      "msbuildProject": "../lObjectIntegration.Infrastructure/lObjectIntegration.Infrastructure.csproj"
     }
   },
   "projectFileDependencyGroups": {
     "net6.0": [
       "AutoMapper.Extensions.Microsoft.DependencyInjection >= 6.0.0",
-      "Swashbuckle.AspNetCore >= 6.2.3"
+      "Swashbuckle.AspNetCore >= 6.2.3",
+      "lObjectIntegration.Application >= 1.0.0",
+      "lObjectIntegration.Domain >= 1.0.0",
+      "lObjectIntegration.Infrastructure >= 1.0.0"
     ]
   },
   "packageFolders": {
@@ -1114,7 +1341,17 @@
       "frameworks": {
         "net6.0": {
           "targetAlias": "net6.0",
-          "projectReferences": {}
+          "projectReferences": {
+            "D:\\Project\\azerimed\\src\\projects\\lObjectIntegration\\lObjectIntegration.Application\\lObjectIntegration.Application.csproj": {
+              "projectPath": "D:\\Project\\azerimed\\src\\projects\\lObjectIntegration\\lObjectIntegration.Application\\lObjectIntegration.Application.csproj"
+            },
+            "D:\\Project\\azerimed\\src\\projects\\lObjectIntegration\\lObjectIntegration.Domain\\lObjectIntegration.Domain.csproj": {
+              "projectPath": "D:\\Project\\azerimed\\src\\projects\\lObjectIntegration\\lObjectIntegration.Domain\\lObjectIntegration.Domain.csproj"
+            },
+            "D:\\Project\\azerimed\\src\\projects\\lObjectIntegration\\lObjectIntegration.Infrastructure\\lObjectIntegration.Infrastructure.csproj": {
+              "projectPath": "D:\\Project\\azerimed\\src\\projects\\lObjectIntegration\\lObjectIntegration.Infrastructure\\lObjectIntegration.Infrastructure.csproj"
+            }
+          }
         }
       },
       "warningProperties": {

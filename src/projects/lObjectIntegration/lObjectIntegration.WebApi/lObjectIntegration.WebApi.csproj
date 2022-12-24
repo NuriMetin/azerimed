@@ -13,8 +13,13 @@
 
   <ItemGroup>
     <Folder Include="Controllers\BestControl\" />
-    <Folder Include="Controllers\GeneralIntegration\" />
     <Folder Include="Controllers\PrintApp\" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\lObjectIntegration.Application\lObjectIntegration.Application.csproj" />
+    <ProjectReference Include="..\lObjectIntegration.Domain\lObjectIntegration.Domain.csproj" />
+    <ProjectReference Include="..\lObjectIntegration.Infrastructure\lObjectIntegration.Infrastructure.csproj" />
   </ItemGroup>
 
 </Project>

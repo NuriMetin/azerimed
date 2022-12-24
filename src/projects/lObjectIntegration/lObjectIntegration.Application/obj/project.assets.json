@@ -246,6 +246,61 @@
             "related": ".xml"
           }
         }
+      },
+      "Core.Domain/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v6.0",
+        "dependencies": {
+          "AutoMapper.Extensions.Microsoft.DependencyInjection": "6.0.0"
+        },
+        "compile": {
+          "bin/placeholder/Core.Domain.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/Core.Domain.dll": {}
+        }
+      },
+      "GeneralIntegration.Domain/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v6.0",
+        "dependencies": {
+          "AutoMapper.Extensions.Microsoft.DependencyInjection": "6.0.0",
+          "Core.Domain": "1.0.0"
+        },
+        "compile": {
+          "bin/placeholder/GeneralIntegration.Domain.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/GeneralIntegration.Domain.dll": {}
+        }
+      },
+      "lObjectIntegration.Domain/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v6.0",
+        "dependencies": {
+          "AutoMapper.Extensions.Microsoft.DependencyInjection": "6.0.0"
+        },
+        "compile": {
+          "bin/placeholder/lObjectIntegration.Domain.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/lObjectIntegration.Domain.dll": {}
+        }
+      },
+      "lObjectIntegration.Infrastructure/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v6.0",
+        "dependencies": {
+          "AutoMapper.Extensions.Microsoft.DependencyInjection": "6.0.0",
+          "GeneralIntegration.Domain": "1.0.0",
+          "lObjectIntegration.Domain": "1.0.0"
+        },
+        "compile": {
+          "bin/placeholder/lObjectIntegration.Infrastructure.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/lObjectIntegration.Infrastructure.dll": {}
+        }
       }
     }
   },
@@ -989,6 +1044,26 @@
         "system.threading.tasks.4.3.0.nupkg.sha512",
         "system.threading.tasks.nuspec"
       ]
+    },
+    "Core.Domain/1.0.0": {
+      "type": "project",
+      "path": "../../../corePackages/Core.Domain/Core.Domain.csproj",
+      "msbuildProject": "../../../corePackages/Core.Domain/Core.Domain.csproj"
+    },
+    "GeneralIntegration.Domain/1.0.0": {
+      "type": "project",
+      "path": "../../generalIntegration/GeneralIntegration.Domain/GeneralIntegration.Domain.csproj",
+      "msbuildProject": "../../generalIntegration/GeneralIntegration.Domain/GeneralIntegration.Domain.csproj"
+    },
+    "lObjectIntegration.Domain/1.0.0": {
+      "type": "project",
+      "path": "../lObjectIntegration.Domain/lObjectIntegration.Domain.csproj",
+      "msbuildProject": "../lObjectIntegration.Domain/lObjectIntegration.Domain.csproj"
+    },
+    "lObjectIntegration.Infrastructure/1.0.0": {
+      "type": "project",
+      "path": "../lObjectIntegration.Infrastructure/lObjectIntegration.Infrastructure.csproj",
+      "msbuildProject": "../lObjectIntegration.Infrastructure/lObjectIntegration.Infrastructure.csproj"
     }
   },
   "projectFileDependencyGroups": {
@@ -996,7 +1071,8 @@
       "AutoMapper.Extensions.Microsoft.DependencyInjection >= 6.0.0",
       "FluentValidation.DependencyInjectionExtensions >= 11.3.0",
       "MediatR.Extensions.Microsoft.DependencyInjection >= 9.0.0",
-      "Microsoft.Extensions.DependencyInjection.Abstractions >= 2.2.0"
+      "Microsoft.Extensions.DependencyInjection.Abstractions >= 2.2.0",
+      "lObjectIntegration.Infrastructure >= 1.0.0"
     ]
   },
   "packageFolders": {
@@ -1031,7 +1107,11 @@
       "frameworks": {
         "net6.0": {
           "targetAlias": "net6.0",
-          "projectReferences": {}
+          "projectReferences": {
+            "D:\\Project\\azerimed\\src\\projects\\lObjectIntegration\\lObjectIntegration.Infrastructure\\lObjectIntegration.Infrastructure.csproj": {
+              "projectPath": "D:\\Project\\azerimed\\src\\projects\\lObjectIntegration\\lObjectIntegration.Infrastructure\\lObjectIntegration.Infrastructure.csproj"
+            }
+          }
         }
       },
       "warningProperties": {

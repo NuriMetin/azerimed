@@ -1,27 +1,24 @@
-﻿using lObjectIntegration.Domain.GeneralIntegration.Enums;
-using System;
+﻿using System;
 using System.Collections.Generic;
 using System.Diagnostics;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using UnityObjects;
-using static lObjectIntegration.Domain.GeneralIntegration.Enums.Enums;
+using lObjectIntegration.Domain.Core.Enums;
 
 namespace lObjectIntegration.Infrastructure.Core.LObjectConnections.Abstract
 {
-    public class UnityConnectionBase : IUnityConnection
+    public class UnityConnectionBase
     {
 
-        public UnityApplication Connect(string userName, string password, Enums.Period period)
+        public static UnityApplication Login(UnityApplication _unityApp, Enums.FirmNr firmNr, Enums.Period period)
         {
-            UnityApplication _unity = new UnityApplication();
-
-            if (!_unity.LoggedIn)
+            if (!_unityApp.LoggedIn)
             {
                 try
                 {
-                    _unity.Login(userName, password, (int)period);
+                    _unityApp.Login("AVTO FAKTURALAMA", "1511", (int)firmNr, (int)period);
                 }
 
                 catch (Exception exp)
@@ -30,25 +27,25 @@ namespace lObjectIntegration.Infrastructure.Core.LObjectConnections.Abstract
                 }
             }
 
-            if (_unity.LoggedIn)
+            if (_unityApp.LoggedIn)
             {
                 // _unity.UserLogout();
             }
 
             else
             {
-                throw new Exception(_unity.GetLastErrorString());
+                throw new Exception(_unityApp.GetLastErrorString());
             }
 
-            return _unity;
+            return _unityApp;
         }
 
-        public void Disconnect(ref UnityApplication _unity)
+        public static void Logout(ref UnityApplication _unityApp)
         {
             try
             {
-                int processId = _unity.GetPID();
-                _unity = null;
+                int processId = _unityApp.GetPID();
+                _unityApp = null;
                 KillLogoObject(processId);
             }
 
@@ -58,7 +55,7 @@ namespace lObjectIntegration.Infrastructure.Core.LObjectConnections.Abstract
             }
         }
 
-        private void KillLogoObject(int processId)
+        private static void KillLogoObject(int processId)
         {
             if (processId != 0)
             {

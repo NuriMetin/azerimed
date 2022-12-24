@@ -1,0 +1,12 @@
+D:\Project\azerimed\src\projects\lObjectIntegration\lObjectIntegration.Domain\bin\Debug\net6.0\lObjectIntegration.Domain.deps.json
+D:\Project\azerimed\src\projects\lObjectIntegration\lObjectIntegration.Domain\bin\Debug\net6.0\lObjectIntegration.Domain.dll
+D:\Project\azerimed\src\projects\lObjectIntegration\lObjectIntegration.Domain\bin\Debug\net6.0\lObjectIntegration.Domain.pdb
+D:\Project\azerimed\src\projects\lObjectIntegration\lObjectIntegration.Domain\obj\Debug\net6.0\lObjectIntegration.Domain.csproj.AssemblyReference.cache
+D:\Project\azerimed\src\projects\lObjectIntegration\lObjectIntegration.Domain\obj\Debug\net6.0\lObjectIntegration.Domain.GeneratedMSBuildEditorConfig.editorconfig
+D:\Project\azerimed\src\projects\lObjectIntegration\lObjectIntegration.Domain\obj\Debug\net6.0\lObjectIntegration.Domain.AssemblyInfoInputs.cache
+D:\Project\azerimed\src\projects\lObjectIntegration\lObjectIntegration.Domain\obj\Debug\net6.0\lObjectIntegration.Domain.AssemblyInfo.cs
+D:\Project\azerimed\src\projects\lObjectIntegration\lObjectIntegration.Domain\obj\Debug\net6.0\lObjectIntegration.Domain.csproj.CoreCompileInputs.cache
+D:\Project\azerimed\src\projects\lObjectIntegration\lObjectIntegration.Domain\obj\Debug\net6.0\lObjectIntegration.Domain.dll
+D:\Project\azerimed\src\projects\lObjectIntegration\lObjectIntegration.Domain\obj\Debug\net6.0\refint\lObjectIntegration.Domain.dll
+D:\Project\azerimed\src\projects\lObjectIntegration\lObjectIntegration.Domain\obj\Debug\net6.0\lObjectIntegration.Domain.pdb
+D:\Project\azerimed\src\projects\lObjectIntegration\lObjectIntegration.Domain\obj\Debug\net6.0\ref\lObjectIntegration.Domain.dll

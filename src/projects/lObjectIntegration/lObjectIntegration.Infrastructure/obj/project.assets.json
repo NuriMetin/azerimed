@@ -191,6 +191,33 @@
           }
         }
       },
+      "Core.Domain/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v6.0",
+        "dependencies": {
+          "AutoMapper.Extensions.Microsoft.DependencyInjection": "6.0.0"
+        },
+        "compile": {
+          "bin/placeholder/Core.Domain.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/Core.Domain.dll": {}
+        }
+      },
+      "GeneralIntegration.Domain/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v6.0",
+        "dependencies": {
+          "AutoMapper.Extensions.Microsoft.DependencyInjection": "6.0.0",
+          "Core.Domain": "1.0.0"
+        },
+        "compile": {
+          "bin/placeholder/GeneralIntegration.Domain.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/GeneralIntegration.Domain.dll": {}
+        }
+      },
       "lObjectIntegration.Domain/1.0.0": {
         "type": "project",
         "framework": ".NETCoreApp,Version=v6.0",
@@ -876,6 +903,16 @@
         "system.threading.tasks.nuspec"
       ]
     },
+    "Core.Domain/1.0.0": {
+      "type": "project",
+      "path": "../../../corePackages/Core.Domain/Core.Domain.csproj",
+      "msbuildProject": "../../../corePackages/Core.Domain/Core.Domain.csproj"
+    },
+    "GeneralIntegration.Domain/1.0.0": {
+      "type": "project",
+      "path": "../../generalIntegration/GeneralIntegration.Domain/GeneralIntegration.Domain.csproj",
+      "msbuildProject": "../../generalIntegration/GeneralIntegration.Domain/GeneralIntegration.Domain.csproj"
+    },
     "lObjectIntegration.Domain/1.0.0": {
       "type": "project",
       "path": "../lObjectIntegration.Domain/lObjectIntegration.Domain.csproj",
@@ -885,6 +922,7 @@
   "projectFileDependencyGroups": {
     "net6.0": [
       "AutoMapper.Extensions.Microsoft.DependencyInjection >= 6.0.0",
+      "GeneralIntegration.Domain >= 1.0.0",
       "lObjectIntegration.Domain >= 1.0.0"
     ]
   },
@@ -921,6 +959,9 @@
         "net6.0": {
           "targetAlias": "net6.0",
           "projectReferences": {
+            "D:\\Project\\azerimed\\src\\projects\\generalIntegration\\GeneralIntegration.Domain\\GeneralIntegration.Domain.csproj": {
+              "projectPath": "D:\\Project\\azerimed\\src\\projects\\generalIntegration\\GeneralIntegration.Domain\\GeneralIntegration.Domain.csproj"
+            },
             "D:\\Project\\azerimed\\src\\projects\\lObjectIntegration\\lObjectIntegration.Domain\\lObjectIntegration.Domain.csproj": {
               "projectPath": "D:\\Project\\azerimed\\src\\projects\\lObjectIntegration\\lObjectIntegration.Domain\\lObjectIntegration.Domain.csproj"
             }
